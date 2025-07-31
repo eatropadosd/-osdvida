@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>apresentação deles</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #141414;
+      font-family: 'Arial', sans-serif;
+      color: rgb(255, 252, 252);
+    }
+
+    header {
+      padding: 20px;
+      background-color: #111;
+      text-align: center;
+      font-size: 2em;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+    }
+
+    .carrossel {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 20px;
+      padding-bottom: 10px;
+    }
+
+    .amigo {
+      min-width: 300px;
+      background-color: #110c0c;
+      border-radius: 10px;
+      overflow: hidden;
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .amigo:hover {
+      transform: scale(1.05);
+    }
+
+    .amigo img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+
+    .info {
+      padding: 15px;
+    }
+
+    .nome {
+      font-size: 1.4em;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    .descricao {
+      font-size: 1em;
+      color: #ccc;
+    }
+
+    ::-webkit-scrollbar {
+      height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #555;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .amigo {
+        min-width: 250px;
+      }
+
+      .amigo img {
+        height: 330px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .amigo {
+        min-width: 200px;
+      }
+
+      .amigo img {
+        height: 260px;
+      }
+
+      .nome {
+        font-size: 1.2em;
+      }
+
+      .descricao {
+        font-size: 0.9em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    Tropa dos d(doente)
+  </header>
+
+  <div class="container">
+    <h2>Apresentando eles:</h2>
+    <div class="carrossel">
+
+      <!-- Amigo 1 -->
+      <div class="amigo">
+        <img src="imagens/foto1.jpeg" alt="João">
+        <div class="info">
+          <div class="nome">Duffles</div>
+          <div class="descricao">caga na sua porta e te passa vergonha sem ter o minimo de humanidade</div>
+        </div>
+      </div>
+
+      <!-- Amigo 2 -->
+      <div class="amigo" alt="Maria">
+        <img src="imagens/foto2.jpeg" alt="Karla">
+        <div class="info">
+          <div class="nome">Antonio</div>
+          <div class="descricao">psicologa do grupo, mas inves de te ajudar te humilha</div>
+        </div>
+      </div>
+
+      <!-- Amigo 3 -->
+      <div class="amigo">
+        <img src="imagens/foto3.jpeg" alt="Lucas">
+        <div class="info">
+          <div class="nome">Guilherme</div>
+          <div class="descricao">ze gritinho fino, funkeiro do grupo e gamer 🤓 ☝.02</div>
+        </div>
+      </div>
+
+      <!-- Amigo 4 -->
+      <div class="amigo">
+        <img src="imagens/foto4.jpeg" alt="Ana">
+        <div class="info">
+          <div class="nome">Pedro</div>
+          <div class="descricao">mecanico(ou quase), idoso do grupo e joao assado.</div>
+        </div>
+      </div>
+
+      <!-- Amigo 5 -->
+      <div class="amigo">
+        <img src="imagens/foto5.jpeg"Karla">
+        <div class="info">
+          <div class="nome">Karla</div>
+          <div class="descricao">karlos andrade, bbzão da boca inchada que dorme nos fim dos role</div>
+        </div>
+      </div>
+
+      <!-- Amigo 6 -->
+      <div class="amigo">
+        <img src="imagens/foto6.jpeg" alt="Carla">
+        <div class="info">
+          <div class="nome">Isabelle</div>
+          <div class="descricao">Caminhoneira que nao sabe falar baixo, educação de um sem teto</div>
+        </div>
+      </div>
+
+      <!-- Amigo 7 -->
+      <div class="amigo">
+        <img src="imagens/foto7.jpeg" alt="Rafael">
+        <div class="info">
+          <div class="nome">Breno</div>
+          <div class="descricao">alma gemea de ze joaquim e joga pedaço de madeira na cabeça dos outros</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
+
